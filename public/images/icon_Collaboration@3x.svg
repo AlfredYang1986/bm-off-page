@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon/icon_Collaboration@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/icon_Collaboration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11" fill="#F2F9FE">
+            <rect id="Rectangle" x="0" y="0" width="40" height="40" rx="2"></rect>
+        </g>
+        <g id="Group" transform="translate(6.000000, 8.000000)" stroke="#0091F4" stroke-width="1.4">
+            <path d="M10.4515601,6.73599319 L13.5899013,1.44873849 C13.8717999,0.973815731 14.4853248,0.817338731 14.9602476,1.09923733 C15.1041575,1.18465754 15.2243286,1.30482857 15.3097488,1.44873849 L18.4577079,6.75219667" id="Path"></path>
+            <path d="M19.4027884,21.9425293 L22.4380731,16.648049 C22.712756,16.1689167 23.3238439,16.0031776 23.8029762,16.2778605 C23.9548653,16.3649373 24.0812311,16.4903656 24.1694367,16.6416019 L27.3055315,22.0187178" id="Path" transform="translate(23.354160, 18.583236) rotate(120.000000) translate(-23.354160, -18.583236) "></path>
+            <path d="M1.59678196,22.0145598 L4.72326021,16.6539324 C5.00150368,16.176859 5.61380898,16.0156755 6.09088236,16.293919 C6.24211872,16.3821245 6.36754697,16.5084904 6.45462379,16.6603794 L9.49927887,21.9712047" id="Path" transform="translate(5.548030, 18.587322) rotate(240.000000) translate(-5.548030, -18.587322) "></path>
+        </g>
+    </g>
+</svg>

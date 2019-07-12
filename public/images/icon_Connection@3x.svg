@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon/icon_Connection@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/icon_Connection" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11">
+            <rect id="Rectangle" fill="#F2F9FE" x="0" y="0" width="40" height="40" rx="2"></rect>
+            <g id="Group-10" transform="translate(20.471405, 20.000000) rotate(-45.000000) translate(-20.471405, -20.000000) translate(10.971405, 10.500000)" stroke="#0091F4" stroke-width="1.4">
+                <rect id="Rectangle" x="0" y="0" width="12.2222222" height="12.2222222"></rect>
+                <rect id="Rectangle-Copy-13" x="6.11111111" y="6.11111111" width="12.2222222" height="12.2222222"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

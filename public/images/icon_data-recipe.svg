@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon/处方@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/处方" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2,0 L15.6764706,0 L15.6764706,18 L5.51219512,18 C3.57246332,18 2,16.4275367 2,14.4878049 L2,0 Z" id="Rectangle" stroke="#768094" stroke-width="2"></path>
+        <path d="M3.76470588,18 C4.73932603,18 5.52941176,17.2137683 5.52941176,16.2439024 C5.52941176,15.2740365 4.73932603,14.4878049 3.76470588,14.4878049 L15.2352941,14.4878049 C16.2099143,14.4878049 17,15.2740365 17,16.2439024 C17,17.2137683 16.2099143,18 15.2352941,18 L3.76470588,18 Z" id="Combined-Shape" stroke="#768094" stroke-width="2"></path>
+    </g>
+</svg>

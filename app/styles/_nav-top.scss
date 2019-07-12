@@ -19,13 +19,15 @@
             letter-spacing: 0;
 
             &.active {
-                color: #0091F4;
+                font-weight: 900;
             }
+
         }
         .scrolled-title {
             color: #132346;
 
             &.active {
+                font-weight: unset;
                 color: #0091F4;
             }
         }

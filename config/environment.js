@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'bmweb',
+    modulePrefix: 'bm-off-page',
     environment,
     rootURL: '/',
     locationType: 'auto',

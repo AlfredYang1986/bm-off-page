@@ -19,9 +19,18 @@
     }
     .header {
         background-image: url('/images/img_head-bg.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        // background-repeat: no-repeat;
+        // background-size: 100% 100%;
         height: 675px;
+        // background-image: url(test.img);
+        // background-size这个需要注意，大小需要看伸缩时是宽度会有富余还是高度会有富余，有富余者为auto，刚好填充满的就是100%
+        //比如宽高分别： 容器是100px*100px的，图片是240px*200px，那么在缩小填充容器时图片的高度会先触及到容器的边缘，也就是填满容器时，宽度有富余为auto，高度为100%；
+        background-size: auto 100%;  // 可以使用cover
+        background-position: center; //背景图片居中显示，让多余部分相对容器对此展示
+        background-repeat: no-repeat;
+        background-origin: border-box; //从border开始填充
+        background-clip: border-box;  //border外的多余背景图片不展示，截取掉，
+
         padding: 0 80px;
         margin-bottom: 112px;
 
@@ -59,7 +68,7 @@
         }
         .content-two {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1040px;
             // height: 222px;
             margin-bottom: 64px;
 
@@ -94,7 +103,7 @@
         }
         .content-three {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1040px;
             margin-bottom: 40px;
             
             .card-wrapper {
@@ -117,7 +126,7 @@
         }
         .content-four {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1040px;
             margin-bottom: 112px;
 
             .card-wrapper {
@@ -136,12 +145,20 @@
                     
                     .des-block {
                         @extend %bm-p1;
-                        padding-right: 8px;
-                        margin-right: 8px;
-                        border-right: 0.5px solid #DADCE2;
+                        // padding-right: 8px;
+                        // margin-right: 8px;
+                        // border-right: 0.5px solid #DADCE2;
 
-                        &:nth-last-child(1) {
-                            border: none;
+                        &::after {
+                            display: inline-block;
+                            content:'\007C';
+                            font-size: 16px;
+                            line-height: 16px;
+                            padding-left: 8px;
+                            padding-right: 8px;
+                        }
+                        &:nth-last-child(1)::after {
+                            display: none;
                         }
                     }
                 }
@@ -151,7 +168,7 @@
             display: none;
         }
         .content-five {
-            max-width: 1200px;
+            max-width: 1040px;
 
             .title-top {
                 @extend %bm-h1;
@@ -187,12 +204,17 @@
                         
                         .des-block {
                             @extend %bm-pp;
-                            padding-right: 4px;
-                            margin-right: 4px;
-                            border-right: 0.5px solid #DADCE2;
 
-                            &:nth-last-child(1) {
-                                border: none;
+                            &::after {
+                                display: inline-block;
+                                content: '\007C';
+                                font-size: 14px;
+                                line-height: 16px;
+                                padding-left: 8px;
+                                padding-right: 8px;
+                            }
+                            &:nth-last-child(1)::after {
+                                content: '';
                             }
                         }
                     }
@@ -224,6 +246,10 @@
                 @extend %bm-h1;
                 margin-bottom: 64px;
                 text-align: center;
+
+                &.min {
+                    display: none;
+                }
             }
             .content-wrapper-outer {
                 // width: 100%;
@@ -234,10 +260,26 @@
                     border: 0.5px solid #06173C;
                     width: 100%;
                 }
+                .card-wrapper {
+                    width: 300px;
+                    height: 212px;
+
+                    .pic {
+                        width: 32px;
+                        height: 32px;
+                    }
+                    .title {
+                        @extend %bm-h2-n95;
+                        text-align: unset;
+                    }
+                    .des {
+                        @extend %bm-p2;
+                    }
+                }
                 .content-wraper {
 
                     .split-line-col {
-                        margin: 0 40px;
+                        margin: 0 112px;
                         opacity: 0.2;
                         border: 0.5px solid #06173C;
                     }
@@ -277,6 +319,37 @@
 
         .des {
             @extend %bm-p3;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-index {
+
+        .header {
+            background-image: url('/images/img_head-bg.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 675px;
+            padding: 0 80px;
+            margin-bottom: 112px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 768px) {
+    .page-index {
+
+        .content {
+            .content-six {
+                .content-wrapper-outer {
+                    .content-wraper {
+                        .split-line-col {
+                            margin: 0 40px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -360,6 +433,14 @@
                 }
             }
             .content-six {
+
+                .title {
+                    display: none;
+
+                    &.min {
+                        display: unset;
+                    }
+                }
                 .content-wrapper-outer {
                     display: none;
                 }
@@ -465,6 +546,14 @@
                 }
             }
             .content-six {
+
+                .title {
+                    display: none;
+
+                    &.min {
+                        display: unset;
+                    }
+                }
                 .content-wrapper-outer {
                     display: none;
                 }
