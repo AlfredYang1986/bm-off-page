@@ -1,0 +1,117 @@
+$n100: #06173C;
+$n95: #132346;
+$n85: #2B3A59;
+$n75: #45516D;
+$n65: #5D6880;
+$n55: #768094;
+$n45: #8F96A7;
+$n35: #A8AEBB;
+$n25: #C1C5CE;
+$n15: #DADCE2;
+
+$n300: #0091F4;
+
+
+%bm-display {
+	font-size: 50px;
+    color: #FFFFFF;
+    letter-spacing: 12px;
+    font-weight: 900;
+}
+
+%bm-h1 {
+	font-size: 32px;
+    color: $n100;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    @media screen and (max-width: 375px) {
+        font-size: 26px;
+    }
+}
+
+%bm-h2-n00 {
+	font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+%bm-h2-blue {
+	font-size: 20px;
+    color: $n300;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+%bm-h2-n95 {
+	font-size: 20px;
+    color: $n95;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+%bm-h2-n55 {
+	font-size: 20px;
+    color: $n55;
+    letter-spacing: 8px;
+    font-weight: 500;
+
+    @media screen and (max-width: 375px) {
+        font-size: 16px;
+    }
+}
+
+%bm-h3 {
+	font-size: 20px;
+    color: $n85;
+    letter-spacing: 1px;
+    font-weight: 300;
+
+    @media screen and (max-width: 375px) {
+        font-size: 14px;
+    }
+}
+
+%bm-p1 {
+	font-size: 16px;
+    color: $n95;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+%bm-p2 {
+	font-size: 14px;
+    color: $n65;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+%bm-p3 {
+	font-size: 12px;
+    color: $n35;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+%bm-pp {
+	font-size: 14px;
+    color: $n55;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+%bm-h1-min {
+    @extend %bm-h1;
+    font-size: 26px;
+}
+
+%bm-h2-n55-min {
+    @extend %bm-h2-n55;
+    font-size: 16px;
+}
+
+%bm-h3-min {
+    @extend %bm-h3;
+    font-size: 14px;
+}

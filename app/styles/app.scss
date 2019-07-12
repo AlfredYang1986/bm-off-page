@@ -1,0 +1,52 @@
+@import "ember-bootstrap/bootstrap";
+@import 'var';
+
+//Routes
+@import 'index';
+
+//Components
+@import 'nav-top';
+
+
+*, ::after, ::before {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB','Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji','Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+html,
+body {
+    height: 100%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB','Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji','Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+body {
+	margin: 0;
+	background-color: #ffffff;
+
+	&>.ember-view {
+		height: 100%;
+		width: 100%;
+		min-height: 100%;
+	}
+}
+
+a {
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+p {
+	margin: 0;
+}
+
+button:focus {
+	outline: none;
+}

@@ -1,0 +1,30 @@
+{{#bp-layout direction='row' main='between' cross='start' classNames='nav-top' id="nav"}}
+    <img class="logo" src="/images/img_logo_white.svg" onclick={{action 'linkToIndex'}}/>
+    {{#bp-layout direction='row' main='start' classNames='nav'}}
+        <a id="a11" href="#a1" class="title mr-4 active" onclick={{action 'navClick' 1}}>在这里打造未来</a>
+        <a id="a22" href="#a2" class="title mr-4" onclick={{action 'navClick' 2}}>互动数据实验室</a>
+        <a id="a33" href="#a3" class="title mr-4" onclick={{action 'navClick' 3}}>数据处方</a>
+        <a id="a44" href="#a4" class="title mr-4" onclick={{action 'navClick' 4}}>数据资产</a>
+        <a id="a55" href="#a5" class="title mr-4" onclick={{action 'navClick' 5}}>安全与合规</a>
+    {{/bp-layout}}
+    <div class="empty"></div>
+{{/bp-layout}}
+
+{{#bp-layout direction='row' main='between' cross='start' classNames='nav-top min' id="nav-min-outer"}}
+    <img class="logo-min" src="/images/img_logo_theme.svg" onclick={{action 'linkToIndex'}}/>
+    <img class="menu-icon" src="/images/icon_meun-black.svg" onclick={{action 'toggleNav'}}>
+{{/bp-layout}}
+
+{{#bs-collapse classNames='top-nav-collapse' collapsed=navCollapsed id="nav-min"}}
+    {{#bp-layout direction='col' classNames="drop-area"}}
+        {{#bp-layout direction='col' classNames="dropdown-content-top p-4 nav"}}
+            <a id="a111" href="#a1" class="title mb-2 active" onclick={{action 'navClick' 1}}>在这里打造未来</a>
+            <a id="a222" href="#a2" class="title mb-2" onclick={{action 'navClick' 2}}>互动数据实验室</a>
+            <a id="a333" href="#a3" class="title mb-2" onclick={{action 'navClick' 3}}>数据处方</a>
+            <a id="a444" href="#a4" class="title mb-2" onclick={{action 'navClick' 4}}>数据资产</a>
+            <a id="a555" href="#a5" class="title" onclick={{action 'navClick' 5}}>安全与合规</a>
+        {{/bp-layout}}
+        {{#bp-layout direction='col' classNames="cover-layer"}}
+        {{/bp-layout}}
+    {{/bp-layout}}
+{{/bs-collapse}}
